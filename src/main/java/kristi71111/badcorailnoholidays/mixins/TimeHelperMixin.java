@@ -18,21 +18,21 @@ public abstract class TimeHelperMixin {
 
     @Inject(method = "isDateAroundHalloween()Z", at = @At("HEAD"), cancellable = true, remap = false)
     private static void injectedIsDateAroundHalloween(CallbackInfoReturnable<Boolean> cir) {
-        if (!Config.isAprilFoolsDayEnabled) {
+        if (!Config.isDateAroundHalloween) {
             cir.setReturnValue(false);
         }
     }
 
     @Inject(method = "isDateAroundChristmas()Z", at = @At("HEAD"), cancellable = true, remap = false)
     private static void injectedIsDateAroundChristmas(CallbackInfoReturnable<Boolean> cir) {
-        if (!Config.isAprilFoolsDayEnabled) {
+        if (!Config.isDateAroundChristmas) {
             cir.setReturnValue(false);
         }
     }
 
     @Inject(method = "isDateAroundEaster()Z", at = @At("HEAD"), cancellable = true, remap = false)
     private static void injectedIsDateAroundEaster(CallbackInfoReturnable<Boolean> cir) {
-        if (!Config.isAprilFoolsDayEnabled) {
+        if (!Config.isDateAroundEaster) {
             cir.setReturnValue(false);
         }
     }
