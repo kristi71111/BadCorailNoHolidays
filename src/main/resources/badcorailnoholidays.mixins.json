@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "kristi71111.badcorailnoholidays.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "BadCorailNoHolidays.refmap.json",
+  "mixins": [
+    "TimeHelperMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
