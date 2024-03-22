@@ -24,15 +24,15 @@ public class Config {
             .define("isEasterEnabled", false);
     public static final ForgeConfigSpec SPEC = configBuilder.build();
     public static boolean isAprilFoolsDayEnabled;
-    public static boolean isDateAroundHalloween;
-    public static boolean isDateAroundChristmas;
-    public static boolean isDateAroundEaster;
+    public static boolean isDateAroundHalloweenEnabled;
+    public static boolean isDateAroundChristmasEnabled;
+    public static boolean isDateAroundEasterEnabled;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
         isAprilFoolsDayEnabled = isAprilFoolsDayEnabledConf.get();
-        isDateAroundHalloween = isDateAroundHalloweenConf.get();
-        isDateAroundChristmas = isDateAroundChristmasConf.get();
-        isDateAroundEaster = isDateAroundEasterConf.get();
+        isDateAroundHalloweenEnabled = isDateAroundHalloweenConf.get();
+        isDateAroundChristmasEnabled = isDateAroundChristmasConf.get();
+        isDateAroundEasterEnabled = isDateAroundEasterConf.get();
     }
 }
